@@ -107,8 +107,8 @@ export default {
   background: linear-gradient(90deg, #ef3d00 -13.42%, #ff6400 116.42%);
   max-width: 38rem;
   max-height: 9rem;
-  left: 55%;
-  top: 43%;
+  left: 50%;
+  top: 46%;
 }
 .main-slider {
   position: relative;
@@ -124,7 +124,7 @@ export default {
   font-size: 5rem;
   line-height: 72px;
   position: absolute;
-  left: 56%;
+  left: 50%;
   top: 20%;
   color: #3b69fa;
   width: auto;

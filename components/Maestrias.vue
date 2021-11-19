@@ -214,7 +214,7 @@ export default {
   padding: 70px 45px 25px 45px;
 }
 .titulo h3 {
-  font-size: 26px;
+  font-size: 1.44rem;
   font-weight: 600;
   color: #ffffff;
   line-height: 24.7px;
@@ -233,7 +233,7 @@ export default {
   padding-bottom: 5rem;
 }
 .section-maestrias {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   max-width: 100%;
   /* background-image: url('~assets/images/material-maestrias.jpg'); */
@@ -245,6 +245,6 @@ export default {
     url('~assets/images/material-maestrias.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
+  padding: 6.4rem 0;
 }
 </style>

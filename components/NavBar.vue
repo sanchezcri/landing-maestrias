@@ -83,7 +83,7 @@ a:hover {
 }
 .navbar {
   background: #363661;
-  padding: 38px 15rem 38px 15rem;
+  padding: 38px 10rem 38px 10rem;
   color: #eaeaea;
   font-size: 22px;
   font-weight: 500;

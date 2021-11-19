@@ -59,6 +59,7 @@ export default {
     position: absolute;
     bottom: 0;
     left: 38%;
+    width: 30%;
   }
 }
 @media (max-width: 850px) {
@@ -104,7 +105,7 @@ export default {
   position: absolute;
   clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
   background: #3b69fa;
-  left: 10%;
+  left: 5%;
   top: 30%;
 }
 h4 {
