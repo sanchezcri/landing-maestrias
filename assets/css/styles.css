@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Calibre';
+  font-style: thin;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/Calibre-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Calibre-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/Calibre-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/Calibre-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Calibre-Black.ttf') format('truetype');
+}
+body {
+  font-family: Calibre, sans-serif;
+}
+::selection {
+  background: #ff6401;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
