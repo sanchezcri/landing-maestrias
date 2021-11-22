@@ -35,14 +35,14 @@ export default {
 <style scoped>
 #btn-wrapper {
   filter: drop-shadow(4px 10px 20px rgba(0, 0, 0, 0.25));
-  height: 100vh;
+  height: 95vh;
 }
 .img-reg {
   height: 100%;
 }
 @media (max-width: 1000px) {
   .main-slider {
-    height: auto !important;
+    height: 95vh !important;
   }
 }
 @media (min-width: 1000px) {
@@ -59,6 +59,7 @@ export default {
   .img-mobile-bg {
     position: absolute;
     bottom: 0;
+    height: 64% !important;
   }
   .registro-btn {
     display: none !important;
@@ -71,21 +72,21 @@ export default {
     left: 18px !important;
   }
   .main-slider h3 {
-    font-size: 2rem !important;
+    font-size: 2.3rem !important;
     line-height: 36px !important;
-    top: 6% !important;
+    top: 10% !important;
     left: 18px !important;
     position: relative;
-    width: 322px !important;
+    width: 328px !important;
   }
   .main-slider h4 {
-    width: 300px !important;
+    width: 330px !important;
     height: 76px !important;
     line-height: 24px !important;
     padding: 16px 32px 5px 16px;
   }
   .main-slider h4 {
-    font-size: 1.33rem !important;
+    font-size: 1.7rem !important;
     position: relative !important;
   }
 }

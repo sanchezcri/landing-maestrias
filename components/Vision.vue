@@ -92,7 +92,7 @@ export default {
   }
   .subtitle-s {
     font-size: 28px !important;
-    margin-top: -14px;
+    margin-top: -5px;
     padding-bottom: 15px;
   }
   .title2-s {
