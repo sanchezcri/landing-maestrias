@@ -1,10 +1,12 @@
 <template>
   <div class="main-slider">
+    <!-- eslint-disable vue/no-v-html -->
     <h3
       class="main-slider-title"
       data-aos="flip-left"
       v-html="content.title"
     ></h3>
+    <!--eslint-enable-->
     <div class="rectangle-orangle">
       <h4 class="main-slider-subtitle">{{ content.subtitle }}</h4>
     </div>

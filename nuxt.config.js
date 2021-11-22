@@ -39,8 +39,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['bootstrap-vue/nuxt'],
   bootstrapVue: {
-    bootstrapCSS: false,
-    bootstrapVueCSS: false,
     icons: false,
   },
 

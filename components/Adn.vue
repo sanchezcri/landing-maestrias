@@ -10,7 +10,9 @@
           <div class="row flex mobile-reverse">
             <div class="w-4/5 md:w-2/3 side-left">
               <h3 class="adn-feature-title">{{ section.main }}</h3>
-              <p class="adn-content">{{ section.content }}</p>
+              <!-- eslint-disable vue/no-v-html -->
+              <p class="adn-content" v-html="section.content"></p>
+              <!--eslint-enable-->
             </div>
             <div class="w-1/5 md:w-1/3">
               <img
@@ -36,7 +38,9 @@
             </div>
             <div class="w-4/5 md:w-2/3 side-right">
               <h3 class="adn-feature-title">{{ section.main }}</h3>
-              <p class="adn-content">{{ section.content }}</p>
+              <!-- eslint-disable vue/no-v-html -->
+              <p class="adn-content" v-html="section.content"></p>
+              <!--eslint-enable-->
             </div>
           </div>
         </div>
@@ -74,7 +78,7 @@ export default {
         {
           main: 'PRESTIGIO ACADÉMICO',
           content:
-            '*Excelencia Docente *Formación continua con cursos gratuitos.*Voluntariado Mentoring.',
+            ' <ul class="list-disc list-inside"> <li>Excelencia Docente</li> <li>Formación continua con cursos gratuitos.</li>  <li>Voluntariado Mentoring.</li> </ul>',
           icon: 'adn-icon-3',
         },
         {
@@ -92,7 +96,7 @@ export default {
         {
           main: 'NETWORKING',
           content:
-            'Networking Internacionak Red Profesional con más de 9 mil Alumnos.',
+            '<ul class="list-disc list-inside"><li>Networking Internacional</li> <li>Red Profesional con más de 9 mil Alumnos.</li></ul>',
           icon: 'adn-icon-6',
         },
         {
@@ -118,10 +122,10 @@ export default {
   }
   .pulse-button {
     bottom: 4%;
-    left: 46% !important;
+    left: calc(52% - 90px) !important;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .img-arrow {
     width: 60% !important;
   }

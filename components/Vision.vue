@@ -1,7 +1,7 @@
 <template>
   <div id="vision" class="section-tarjetas relative flex">
     <div class="md:flex container m-auto items-center">
-      <div class="md:w-1/2 m-auto">
+      <div class="md:w-1/2 m-auto column-content">
         <h2 class="title-s" v-html="title"></h2>
         <h3 class="subtitle-s mt-4 md:mt-0" v-html="subtitle"></h3>
         <h4 class="title2-s" v-html="title2"></h4>
@@ -62,6 +62,9 @@ export default {
   .title2-s {
     width: 386px;
   }
+  .column-content {
+    padding-left: 2rem;
+  }
 }
 @media (min-width: 850px) {
   .img-tarjetas {
@@ -110,6 +113,7 @@ export default {
     width: 100% !important;
     font-size: 14px !important;
     padding: 22px 32px 15px 32px !important;
+    margin: auto;
   }
   .tarjetas {
     position: relative !important;

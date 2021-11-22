@@ -6,7 +6,7 @@
         @mouseover="cardHover = true"
         @mouseleave="cardHover = false"
       >
-        <div class="card flex items-center justify-center p-4">
+        <div class="card flex items-center justify-center content-facts p-4">
           <div class="">
             <div v-show="!cardHover" class="hide flex">
               <img
@@ -14,7 +14,7 @@
                 class="image-card"
                 alt=""
               />
-              <p class="content-card m-auto">{{ items[0].content }}</p>
+              <p class="content-card m-auto p-2">{{ items[0].content }}</p>
             </div>
           </div>
           <p v-show="cardHover">{{ items[0].hover }}</p>
@@ -93,6 +93,11 @@ export default {
 }
 </script>
 <style scoped>
+@media (min-width: 851px) {
+  .content-facts {
+    padding: 1rem !important;
+  }
+}
 .container-sec-2 {
   cursor: pointer;
 }
@@ -111,9 +116,10 @@ export default {
   font-size: 24px;
   font-weight: 600;
   width: 174px;
+  line-height: 27px;
 }
 .card {
-  height: 20vh;
+  height: 25vh;
   font-size: 24px;
   background: #ffd700;
   border: none !important;
@@ -125,6 +131,6 @@ export default {
   background: #ffd700;
 }
 .section-2-part-2 {
-  height: 20vh;
+  height: 25vh;
 }
 </style>

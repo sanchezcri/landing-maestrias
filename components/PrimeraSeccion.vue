@@ -2,7 +2,9 @@
   <div class="section-1-part-1 flex relative items-center">
     <div class="w-full md:w-2/3">
       <div class="rectangle-blue">
+        <!-- eslint-disable vue/no-v-html -->
         <h4 class="primera-seccion-header pt-3 md:pt-0" v-html="header"></h4>
+        <!--eslint-enable-->
       </div>
     </div>
     <div class="w-full md:w-1/3 content-pr">
@@ -18,8 +20,10 @@
           </div>
         </div>
       </div>
+      <!-- eslint-disable vue/no-v-html -->
       <h3 v-html="title"></h3>
-      <p class="pt-3 md:pt-0" v-html="content"></p>
+      <p class="pt-3 md:pt-0 content-1st" v-html="content"></p>
+      <!--eslint-enable-->
     </div>
     <img src="~/assets/images/section-2pj.png" alt="" class="pj-section-1" />
   </div>
@@ -30,7 +34,7 @@ export default {
     return {
       title: 'Impulsa tu carrera con un<br>MAESTRIA ESPECIALIZADA.',
       content:
-        'Donde los conocimientos gerenciales del <br>nuevo mundo se integran con contenidos<br>innovadores bajo un modelo flexible que<br>se adapta a tu estilo de vida y lleva al<br>siguiente nivel tu carrera profesional.<br><br> ¡Transforma tu manera de ver y hacer negocios!',
+        'Donde los conocimientos gerenciales del nuevo mundo se integran con contenidos innovadores bajo un modelo flexible que se adapta a tu estilo de vida y lleva al siguiente nivel tu carrera profesional.<br><br> ¡Transforma tu manera de ver y hacer negocios!',
       header: '<strong>ELIGE UNA MAESTRÍA</strong><br>ELIGE TU FUTURO',
       iconsmob: [
         {
@@ -51,6 +55,11 @@ export default {
 }
 </script>
 <style scoped>
+@media (min-width: 1200px) {
+  .content-1st {
+    width: 77% !important;
+  }
+}
 @media (min-width: 850px) {
   .mobile-facts {
     display: none;
@@ -118,7 +127,7 @@ h3 {
   font-size: 32px;
 }
 p {
-  font-size: 32px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 .section-1-part-1 {

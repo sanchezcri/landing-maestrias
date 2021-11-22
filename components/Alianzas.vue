@@ -5,7 +5,20 @@
       <h4 class="alianzas-subtitle">{{ subtitle }}</h4>
       <div class="logos-aliados grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0">
         <div
-          v-for="aliado in aliados"
+          v-for="aliado in aliados.slice(0, 8)"
+          :key="aliado.key"
+          class="logos-aliado mx-auto"
+        >
+          <img
+            :src="require(`~/assets/images/alianzas/${aliado.url}.png`)"
+            class="text-center img-aliado mx-auto"
+            :alt="aliado.alt"
+          />
+        </div>
+      </div>
+      <div class="logos-aliados grid grid-cols-3 md:grid-cols-3 gap-6 md:gap-0">
+        <div
+          v-for="aliado in aliados.slice(8, 12)"
           :key="aliado.key"
           class="logos-aliado mx-auto"
         >
@@ -63,10 +76,6 @@ export default {
           alt: 'Arellano',
         },
         {
-          url: 'alianzas-logos-10',
-          alt: 'Politecnico Milano',
-        },
-        {
           url: 'alianzas-logos-11',
           alt: 'IE Business School',
         },
@@ -94,7 +103,7 @@ export default {
 }
 @media (max-width: 850px) {
   .img-aliado {
-    width: 80% !important;
+    width: 100% !important;
   }
   .section-alianzas {
     padding: 56px 41px 77px 41px !important;

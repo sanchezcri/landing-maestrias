@@ -1,6 +1,6 @@
 <template>
   <div id="prueba" ref="prueba">
-    <div class="flex items-center relative">
+    <div class="md:flex items-center relative">
       <div class="w-full md:w-3/5"></div>
       <div class="w-full md:w-2/5 column-prueba md:flex items-center my-auto">
         <div class="content-column-prueba">
@@ -20,8 +20,8 @@
           </div>
           <div class="btn-wrapper">
             <button
-              @click="comenzarPrueba()"
               class="text-white btn-comenzar-prueba"
+              @click="comenzarPrueba()"
             >
               COMENZAR PRUEBA
             </button>
@@ -59,7 +59,6 @@ export default {
   },
   methods: {
     comenzarPrueba() {
-      console.log('Hi')
       document.getElementById('prueba').style.background =
         "url('https://dc688.4shared.com/img/EQBlg4Doiq/s24/17d39befa48/test-bg?async&rand=0.8192420697061247')"
       // this.$refs.prueba.style.animationName = 'bg'
@@ -85,7 +84,7 @@ export default {
   }
   .img-prueba {
     width: auto;
-    bottom: 0;
+    bottom: 0% !important;
     left: 18%;
   }
 }
@@ -93,19 +92,37 @@ export default {
   background: #ff6400 !important;
   color: #ffd700 !important;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
+  .prueba-title {
+    width: 70% !important;
+  }
+}
+@media (min-width: 851px) {
   .img-prueba {
     bottom: 0 !important;
+  }
+}
+@media (max-width: 850px) {
+  .txt-prueba {
+    margin-bottom: 80px !important;
+  }
+  .content-column-prueba {
+    padding-left: 30px;
+  }
+  .img-prueba {
+    bottom: 7% !important;
+    left: 0% !important;
   }
   .btn-wrapper {
     position: absolute !important;
     left: 5% !important;
+    bottom: 0 !important;
   }
   .column-prueba {
     height: auto !important;
   }
   .space {
-    margin-top: 12rem;
+    margin-top: 8.5rem;
   }
   .btn-comenzar-prueba {
     font-size: 18px !important;
@@ -116,8 +133,8 @@ export default {
   }
   .txt-prueba {
     width: 117px !important;
-    font-size: 14px !important;
-    line-height: 14px !important;
+    font-size: 16px !important;
+    line-height: 17px !important;
   }
   .prueba-title {
     font-size: 32px !important;

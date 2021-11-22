@@ -162,6 +162,11 @@ export default {
   }
 }
 @media (max-width: 850px) {
+  .titulo {
+    background: url('~/assets/images/bg-maestrias-mobil.jpg') !important;
+    background-position: right !important;
+    background-size: cover !important;
+  }
   .cursos-mobile {
     padding: 0px 40px;
   }
@@ -173,12 +178,13 @@ export default {
     font-size: 24px !important;
     line-height: 24px !important;
     padding-bottom: 15px !important;
+    width: 85%;
   }
   .section-maestrias {
-    padding: 60px 39px !important;
+    padding: 50px 39px !important;
   }
   .titulo {
-    padding: 15px 30px 10px 30px !important;
+    padding: 23px 30px 0px 30px !important;
     background-position: top right !important;
   }
   .titulo-curso {

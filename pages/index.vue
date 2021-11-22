@@ -6,7 +6,6 @@
     <Facts />
     <Vision />
     <Adn />
-    <Prueba />
     <Alianzas />
     <Maestrias />
     <Formulario />
